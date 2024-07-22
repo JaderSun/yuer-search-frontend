@@ -18,12 +18,14 @@ const props = withDefaults(defineProps<Props>(), {
   >
     <template #renderItem="{ item }">
       <a-list-item>
-        <a-card hoverable>
-          <template #cover>
-            <img alt="example" :src="item.url" class="fixed-height-image" />
-          </template>
-          <a-card-meta :title="item.title"></a-card-meta>
-        </a-card>
+        <a :href="item.url">
+          <a-card hoverable>
+            <template #cover>
+              <img alt="example" :src="item.url" class="fixed-height-image" />
+            </template>
+            <a-card-meta :title="item.title"></a-card-meta>
+          </a-card>
+        </a>
       </a-list-item>
     </template>
   </a-list>
