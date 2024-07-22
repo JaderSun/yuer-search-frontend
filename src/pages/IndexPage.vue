@@ -2,8 +2,8 @@
   <div class="index-page">
     <a-input-search
       v-model:value="searchText"
-      placeholder="input search text"
-      enter-button="Search"
+      placeholder="请输入关键词"
+      enter-button="搜索"
       size="large"
       @search="onSearch"
     />
