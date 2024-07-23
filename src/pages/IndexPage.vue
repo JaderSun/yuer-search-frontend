@@ -52,7 +52,7 @@ const activeKey = route.params.category;
 const initSearchParams = {
   type: activeKey,
   text: "",
-  pageSize: 10,
+  pageSize: 50,
   pageNum: 1,
 };
 
